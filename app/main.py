@@ -163,7 +163,7 @@ def extract_key_phrases(text: str) -> list[str]:
     Returns:
         List of key phrase strings.
     """
-    client = _get_language_client())
+    client = _get_language_client()
     response = client.extract_key_phrases(documents=[text])
   
     if len(response) > 0:
